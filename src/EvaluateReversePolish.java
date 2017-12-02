@@ -11,7 +11,7 @@ public class EvaluateReversePolish {
 
 		for (int i = 0; i < expression.length(); i++) {
 
-			// if a space or , encountered just ignore it
+			// if a ' ' or ',' is encountered just ignore it
 			if (expression.charAt(i) == ' ' || expression.charAt(i) == ',')
 				continue;
 
