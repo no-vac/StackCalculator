@@ -76,27 +76,4 @@ public class EvaluateReversePolish {
 			return 0;
 		}
 	}
-
-	// String token;
-	// stack.push("-");
-	// stack.push('+');
-	// stack.push("5");
-	// stack.push("1");
-	// stack.push("2");
-	// for(token:stack){
-	// String thing = new String(stack.pop().toString());
-	// if(operators.contains(token)){
-	// System.out.println("is operator " + token);
-	// operand1 = (int)stack.pop();
-	// operand2 = (int)stack.pop();
-	// System.out.println(operand1 +" "+ operand2);
-	// result = evaluate(token,operand1,operand2);
-	// System.out.println(result);
-	// stack.push(result);
-	// }else{
-	// stack.push(token);
-	// }
-	// }
-	// result = (int)stack.pop();
-	// System.out.println(result);
 }
