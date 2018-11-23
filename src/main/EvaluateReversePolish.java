@@ -5,7 +5,7 @@ import java.util.Stack;
 public class EvaluateReversePolish {
 
 	public static void main(String[] args) {
-		String expression = new String("8 2 / 5 * 2 *");
+		String expression = new String("2 5 8 2 / * *");
 		Stack<Integer> stack = new Stack<Integer>();
 		String operators = new String("*/+-");
 		int operand1 = 0, operand2 = 0, result = 0;
@@ -21,10 +21,12 @@ public class EvaluateReversePolish {
 			else if (isDigit(expression.charAt(i))) {
 				int op = 0;
 
-				// If the token has more than one digit we multiply by 10
-				// and add the digit to the operator.
-				// We do -'0' to get the correct result since we are dealing
-				// with chars.
+				/*
+				* If the token has more than one digit we multiply by 10
+				* and add the digit to the operator.
+				* We do -'0' to get the correct result since we are dealing
+				* with chars.
+				*/
 				while (i < expression.length() && isDigit(expression.charAt(i))) {
 					op = (op * 10) + (expression.charAt(i) - '0');
 					i++;
